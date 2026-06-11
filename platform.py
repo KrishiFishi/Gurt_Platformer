@@ -213,7 +213,7 @@ class Game:
                             self.player.movement_x[0] = True
                         if event.key == pygame.K_d or event.key == pygame.K_RIGHT:
                             self.player.movement_x[1] = True
-                        if event.key == pygame.K_SPACE:
+                        if event.key == pygame.K_SPACE or event.key == pygame.K_LSHIFT:
                             self.player.dash()
                     if event.type == pygame.KEYUP:
                         if event.key == pygame.K_a or event.key == pygame.K_LEFT:
